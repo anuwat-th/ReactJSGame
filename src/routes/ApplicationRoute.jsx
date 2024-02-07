@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import HomeScreen
-function App() {
+import HomeScreen from '../screens/HomeScreen';
+function ApplicationRoute() {
     return (
         <BrowserRouter>
             <main>
@@ -13,4 +13,4 @@ function App() {
     );
 }
 
-export default App;
+export default ApplicationRoute;

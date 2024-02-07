@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: #C81D25;
+    --primaryVariant: #FF5A5F;
+    --secondary: #0B3954;
+    --secondaryVariant: #087E8B;
+    --accent: #BFD7EA;
+    --warning: #FFC216;
+    --alert: #FF0000;
+
+    --b0: #FFFFFF;
+    --b1: #FAFAFA;
+    --b2: #F5F5F7;
+    --b3: #E8E8E9;
+    --b4: #BBBBBC;
+    --b5: #8E8E8F;
+    --b6: #606062;
+    --b7: #333335;
+    --b8: #1C1C1E;
+    --b9: #000000;
+}
+
+
+/* Media Query for Tablet */
+@media only screen and (min-aspect-ratio: 16/9) {
+    :root {
+        --unit: (1vw / 14.4);
+    }
+}
+
+/* Media Query for Desktop */
+@media only screen and (max-aspect-ratio: 16/9) {
+    :root {
+        --unit: (1vh / 8.1);
+    }
+}

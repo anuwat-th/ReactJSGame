@@ -1,0 +1,61 @@
+.HomeScreen {
+    .heroSection {
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(var(--secondary), var(--secondaryVariant));
+        display: flex;
+        flex-direction: column;
+    }
+
+    .heroVector {
+        width: calc(864 * var(--unit));
+        height: calc(656 * var(--unit));
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background: url("../../assets/homeHeroVector.png") no-repeat center;
+        background-size: cover;
+    }
+
+    .heroTitle {
+        width: calc(1232 * var(--unit));
+        height: calc(192 * var(--unit));
+        margin: calc(160 * var(--unit)) auto 0 auto;
+        text-align: center;
+        color: var(--b0);
+        font: 600 calc(64 * var(--unit)) "Prompt";
+    }
+
+    .heroDescription {
+        width: calc(1232 * var(--unit));
+        height: calc(40 * var(--unit));
+        margin: calc(16 * var(--unit)) auto 0 auto;
+        text-align: center;
+        color: var(--b0);
+        font: 400 calc(20 * var(--unit)) "Prompt";
+    }
+
+    .buttonPlayContainer {
+        width: calc(200 * var(--unit));
+        height: calc(72 * var(--unit));
+        margin: calc(64 * var(--unit)) auto 0 auto;
+        background-color: rgba(8, 126, 139, 0.8);
+        border-radius: calc(20 * var(--unit));
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+
+    .buttonPlay{
+        width: calc(192 * var(--unit));
+        height: calc(64 * var(--unit));
+        border-radius: calc(16 * var(--unit));
+        background: var(--b0);
+        margin: calc(4 * var(--unit));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font: 500 calc(20 * var(--unit)) "Prompt";
+        color:var(--secondary);
+    }
+}
