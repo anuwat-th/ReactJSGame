@@ -44,8 +44,14 @@
         border-radius: calc(20 * var(--unit));
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
+        cursor: pointer;
     }
 
+    .buttonPlayContainer :hover{
+        transition: 0.3s;
+        transform: scale(1.1);
+    }
+    
     .buttonPlay{
         width: calc(192 * var(--unit));
         height: calc(64 * var(--unit));
