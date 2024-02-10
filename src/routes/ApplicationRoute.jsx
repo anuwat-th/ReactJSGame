@@ -1,15 +1,22 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import HomeScreen from '../screens/HomeScreen';
-function ApplicationRoute() {
-    return (
-        <BrowserRouter>
-            <main>
-                <Routes>
-                    <Route path="/" element={<HomeScreen />} />
-                </Routes>
-            </main>
-        </BrowserRouter>
-    );
-}
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import HomeScreen from "./screens/HomeScreen";
 
-export default ApplicationRoute;
+const router = createBrowserRouter([
+  {
+    path: "/vite-react-router/",
+    element: <App />,
+    children: [
+      {
+        path: "/vite-react-router/",
+        element: <HomeScreen />,
+      },
+      
+    ],
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
+);

@@ -1,10 +1,19 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import ApplicationRoute from "./routes/ApplicationRoute"
+import { Link, Outlet } from "react-router-dom";
 
-const rootElement = document.getElementById('root');
-ReactDOM.createRoot(rootElement).render(
-  <React.StrictMode>
-    <ApplicationRoute />
-  </React.StrictMode>
-);
+export default function App() {
+  return (
+    <>
+      [FIXED_CONTENT]
+
+      <nav>
+        <Link to="/vite-react-router/">Home</Link>
+        {" | "}
+        {/* <Link to="/vite-react-router/contact">Contact</Link> */}
+      </nav>
+
+      <Outlet />
+
+      [FIXED_CONTENT]
+    </>
+  );
+}
